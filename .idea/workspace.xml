@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db4e6ebd-dc05-4a22-9ee2-a79b4120ee64" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store_uuid.py" afterDir="false" />
+    <list default="true" id="db4e6ebd-dc05-4a22-9ee2-a79b4120ee64" name="Changes" comment="add gitignore">
+      <change afterPath="$PROJECT_DIR$/api_logic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process_folders.py" beforeDir="false" afterPath="$PROJECT_DIR$/process_folders.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/reader.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +49,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.api_client.executor": "Run",
+    "Python.api_logic.executor": "Run",
     "Python.api_requests.executor": "Run",
     "Python.converter.executor": "Run",
     "Python.main.executor": "Run",
@@ -91,11 +91,55 @@
       <option name="project" value="LOCAL" />
       <updated>1770134394934</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="start">
+      <option name="closed" value="true" />
+      <created>1770403595753</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1770403595754</updated>
+    </task>
+    <task id="LOCAL-00003" summary="start">
+      <option name="closed" value="true" />
+      <created>1770403713972</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1770403713972</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add gitignore">
+      <option name="closed" value="true" />
+      <created>1770403762942</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1770403762942</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add gitignore">
+      <option name="closed" value="true" />
+      <created>1770403844933</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1770403844933</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start" />
-    <option name="LAST_COMMIT_MESSAGE" value="start" />
+    <MESSAGE value="add gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="add gitignore" />
   </component>
 </project>
