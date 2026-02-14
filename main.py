@@ -63,8 +63,8 @@ for folder_name, folder_path in INPUT_FOLDERS.items():
 
     #Добавляем пустые колонки
     if "STOCK_CHR" in df_result.columns and "STOCK_PL" in df_result.columns:
-        idx_chr = df_result.columns.get_loc("STOCK_CHR")-1
-        idx_pl = df_result.columns.get_loc("STOCK_PL")+1
+        idx_chr = df_result.columns.get_loc("STOCK_CHR")+1
+        idx_pl = df_result.columns.get_loc("STOCK_PL")+2
 
         df_result.insert(idx_chr, "FACT_CHR", "")
         df_result.insert(idx_pl, "FACT_PL", "")
