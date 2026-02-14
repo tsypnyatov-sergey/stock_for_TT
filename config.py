@@ -16,8 +16,8 @@ STOCK_PL= "8d54a9fc-ae55-11ef-0a80-07b6009b8b63"
 
 # 2. Основные папки для исходных данных
 INPUT_FOLDERS = {
-    "FACT_CHR": os.path.join(ROOT_DIR,"File", "FACT_CHR"),
-    "FACT_PL": os.path.join(ROOT_DIR, "File","FACT_PL"),
+    "FACT_CHR": os.path.join(ROOT_DIR,"File", "FACT_CHR","_xlsx"),
+    "FACT_PL": os.path.join(ROOT_DIR, "File","FACT_PL","_xlsx"),
 }
 # 3. Папка для конвертированных файлов
 CONVERTED_FOLDER = os.path.join(ROOT_DIR,"conv_xlsx")

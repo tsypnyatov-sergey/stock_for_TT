@@ -3,12 +3,14 @@ import glob
 import os
 
 
-def read_fact_stock(xlsx_folder: str) -> dict:
+
+
+def read_fact_stock(xlsx_folder: str) -> pd.DataFrame:
 
     xlsx_files = [f for f in glob.glob(os.path.join(xlsx_folder, "*.xlsx"))
                   if not os.path.basename(f).startswith("~$")]
 
-    fact_data = {}
+    all_records = []
 
     for file_path in xlsx_files:
 
@@ -34,6 +36,7 @@ def read_fact_stock(xlsx_folder: str) -> dict:
 
         code_col_idx = None
         fact_col_idx = None
+        name_col_idx = None
 
         # Ищем номера колонок
         for i, cell in enumerate(header_row):
@@ -45,8 +48,12 @@ def read_fact_stock(xlsx_folder: str) -> dict:
             if cell_value == "фактический остаток":
                 fact_col_idx = i
 
+            if cell_value == "наименование":
+                name_col_idx = i
+
         print("Колонка Код:", code_col_idx)
         print("Колонка Факт:", fact_col_idx)
+        print("Колонка Наименование:", name_col_idx)
 
         if code_col_idx is None or fact_col_idx is None:
             print("Нужные колонки не найдены")
@@ -54,6 +61,7 @@ def read_fact_stock(xlsx_folder: str) -> dict:
 
         # Берём строки после заголовка
         data_rows = df.iloc[header_row_idx + 1:]
+
 
         for _, row in data_rows.iterrows():
 
@@ -63,9 +71,11 @@ def read_fact_stock(xlsx_folder: str) -> dict:
                 continue
 
             fact_value = row[fact_col_idx]
+            name_value = row[name_col_idx] if name_col_idx is not None else None
+            all_records.append ({"Код":code, "Наименование": name_value, "Посчитано": fact_value})
 
-            fact_data[code] = fact_value
+    df_result = pd.DataFrame(all_records)
 
-    return fact_data
+    return df_result
 
 
